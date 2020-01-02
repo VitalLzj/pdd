@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor="let item of tabs; let i=index">
+        <a href="#" [class.active]="selectIndex === i" (click)="topTabSelected(i)">{{item.title}}</a>
+        <span *ngIf="selectIndex === i" class="indicator"></span>
+    </li>
+</ul>
