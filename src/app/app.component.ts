@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TopMenu } from './components/scrollable-tab/scrollable-tab.component';
+import { ImageSlider } from './components';
 
 @Component({
   selector: 'app-root',
@@ -48,6 +49,27 @@ export class AppComponent {
     title: '电脑',
     link: ''
   }];
+
+  sliderImages: ImageSlider[] = [
+    {
+      imgUrl: 'http://img5.imgtn.bdimg.com/it/u=3008142408,2229729459&fm=26&gp=0.jpg',
+      link: '',
+      caption: ''
+    }, {
+      imgUrl: 'http://file02.16sucai.com/d/file/2015/0128/8b0f093a8edea9f7e7458406f19098af.jpg',
+      link: '',
+      caption: ''
+    }, {
+      imgUrl: 'http://img5.imgtn.bdimg.com/it/u=3008142408,2229729459&fm=26&gp=0.jpg',
+      link: '',
+      caption: ''
+    }, {
+      imgUrl: 'http://file02.16sucai.com/d/file/2015/0128/8b0f093a8edea9f7e7458406f19098af.jpg',
+      link: '',
+      caption: ''
+    }
+  ]
+
 
   handleTabSelect(event) {
     console.log(event);
