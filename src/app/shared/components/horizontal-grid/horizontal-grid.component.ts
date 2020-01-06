@@ -1,4 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+export interface HorizontalGrid {
+  src: string,
+  des?: string,
+  title: string
+}
+
 
 @Component({
   selector: 'app-horizontal-grid',
@@ -7,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HorizontalGridComponent implements OnInit {
 
-  username: any = '';
+  @Input() channels: HorizontalGrid;
 
   constructor() { }
 

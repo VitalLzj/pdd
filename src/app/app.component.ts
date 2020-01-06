@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { TopMenu } from './components/scrollable-tab/scrollable-tab.component';
-import { ImageSlider } from './components';
+import { TopMenu, ImageSlider, HorizontalGrid } from './shared/components';
 
 @Component({
   selector: 'app-root',
@@ -68,6 +67,32 @@ export class AppComponent {
       link: '',
       caption: ''
     }
+  ]
+
+  //横向网格
+  channels: HorizontalGrid[] = [
+    {
+      src: 'http://img5.imgtn.bdimg.com/it/u=3008142408,2229729459&fm=26&gp=0.jpg',
+      title: '01'
+    }, {
+      src: 'http://img5.imgtn.bdimg.com/it/u=3008142408,2229729459&fm=26&gp=0.jpg',
+      title: '02'
+    }, {
+      src: 'http://img5.imgtn.bdimg.com/it/u=3008142408,2229729459&fm=26&gp=0.jpg',
+      title: '03'
+    }, {
+      src: 'http://img5.imgtn.bdimg.com/it/u=3008142408,2229729459&fm=26&gp=0.jpg',
+      title: '04'
+    }, {
+      src: 'http://img5.imgtn.bdimg.com/it/u=3008142408,2229729459&fm=26&gp=0.jpg',
+      title: '05'
+    }, {
+      src: 'http://img5.imgtn.bdimg.com/it/u=3008142408,2229729459&fm=26&gp=0.jpg',
+      title: '06'
+    }, {
+      src: 'http://img5.imgtn.bdimg.com/it/u=3008142408,2229729459&fm=26&gp=0.jpg',
+      title: '07'
+    },
   ]
 
 
