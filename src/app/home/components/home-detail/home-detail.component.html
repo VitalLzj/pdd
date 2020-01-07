@@ -1,0 +1,8 @@
+<div *ngIf="selectedTab === 'hot'; else elseTemplate">
+    <app-image-slider [images]='sliderImages'></app-image-slider>
+    <app-horizontal-grid [channels]="channels"></app-horizontal-grid>
+</div>
+
+<ng-template #elseTemplate>
+    other selectedTab {{selectedTab}}
+</ng-template>
